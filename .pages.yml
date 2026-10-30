@@ -65,15 +65,26 @@ content:
       - name: target_eur
         label: "الهدف باليورو"
         type: number
-      - name: confirmed_eur
-        label: "التبرعات المؤكدة باليورو"
-        type: number
-      - name: spent_eur
-        label: "المصروفات باليورو"
-        type: number
       - name: financial_tracking_started
-        label: "هل بدأ تتبع التبرعات؟"
+        label: "هل بدأ عرض التقارير المالية الفعلية؟"
         type: boolean
+      - name: financial_reports
+        label: "سجل التقارير المالية الشهرية (الأرقام الفعلية فقط)"
+        type: object
+        list: true
+        fields:
+          - name: period
+            label: "الفترة (مثال: نوفمبر 2026)"
+            type: text
+          - name: received_eur
+            label: "التبرعات المستلمة خلال الفترة باليورو"
+            type: number
+          - name: paid_eur
+            label: "المبالغ المدفوعة للمدارس خلال الفترة باليورو"
+            type: number
+          - name: status
+            label: "الحالة (مثال: مكتمل / قيد المراجعة)"
+            type: text
       - name: association_name
         label: "اسم الجمعية"
         type: text
