@@ -1,0 +1,88 @@
+media:
+  input: .
+  output: /
+content:
+  - name: site
+    label: محتوى الموقع
+    type: file
+    path: content.json
+    format: json
+    fields:
+      - name: group_name
+        label: "اسم المجموعة"
+        type: text
+      - name: hero_title
+        label: "العنوان الرئيسي"
+        type: text
+      - name: hero_description
+        label: "وصف المبادرة"
+        type: text
+      - name: about_intro
+        label: "من نحن - المقدمة"
+        type: text
+      - name: about_mission
+        label: "من نحن - الهدف"
+        type: text
+      - name: about_notice
+        label: "ملاحظة الجمعية"
+        type: text
+      - name: donation_intro
+        label: "مقدمة التبرعات"
+        type: text
+      - name: donation_notice
+        label: "تنبيه التبرعات"
+        type: text
+      - name: contact_intro
+        label: "مقدمة التواصل"
+        type: text
+      - name: contact_email
+        label: "البريد الإلكتروني"
+        type: text
+      - name: contact_facebook
+        label: "صفحة فيسبوك"
+        type: text
+      - name: contact_entity
+        label: "الجهة المسؤولة"
+        type: text
+      - name: principle_education
+        label: "مبدأ التعليم"
+        type: text
+      - name: principle_transparency
+        label: "مبدأ الشفافية"
+        type: text
+      - name: principle_continuity
+        label: "مبدأ الاستمرارية"
+        type: text
+      - name: target_students
+        label: "عدد الطلاب المستهدفين"
+        type: number
+      - name: primary_students
+        label: "طلاب الابتدائي"
+        type: number
+      - name: middle_students
+        label: "طلاب الإعدادي"
+        type: number
+      - name: target_eur
+        label: "الهدف باليورو"
+        type: number
+      - name: confirmed_eur
+        label: "التبرعات المؤكدة باليورو"
+        type: number
+      - name: spent_eur
+        label: "المصروفات باليورو"
+        type: number
+      - name: financial_tracking_started
+        label: "هل بدأ تتبع التبرعات؟"
+        type: boolean
+      - name: association_name
+        label: "اسم الجمعية"
+        type: text
+      - name: payment_details
+        label: "تفاصيل الحساب البنكي"
+        type: text
+      - name: report_period
+        label: "فترة التقرير"
+        type: text
+      - name: report_status
+        label: "حالة التقرير"
+        type: text
